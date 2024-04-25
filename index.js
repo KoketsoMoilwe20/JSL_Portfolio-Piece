@@ -21,7 +21,19 @@ initializeData();
 
 // TASK: Get elements from the DOM
 const elements = {
+  //Navigation SideBar DOM elements
 
+  headerBoardName: document.getElementById("header-board-name"),
+  sideBar: document.querySelector('.side-bar'),
+  sideLogoDiv: document.getElementById('logo'),
+  sideBarDiv: document.getElementById('side-bar-div'),
+  boardsNavLinksDiv: document.getElementById('boards-nav-links-div'),
+  themeSwitch: document.getElementById('switch'),
+  hideSideBarBtn: document.getElementById('hide-side-bar-btn'),
+  showSideBarBtn: document.getElementById('show-side-bar-btn'),
+
+  //Main layout DOM elements
+  
 }
 
 let activeBoard = ""
