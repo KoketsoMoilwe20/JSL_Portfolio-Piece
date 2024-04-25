@@ -49,6 +49,17 @@ const elements = {
   selectStatus: document.getElementById('select-status'),
   createNewTaskBtn: document.getElementById('add-new-task-btn'),
   cancelAddTaskBtn: document.getElementById('cancel-add-task-btn'),
+
+  //Edit Task Modal DOM elements
+  editTaskModal: document.querySelector('.edit-task-modal-window'),
+  editTaskForm: document.getElementById('edit-task-form'),
+  editTaskTitleInput: document.getElementById('edit-task-title-input'),
+  editTaskDescInput: document.getElementById('edit-task-desc-input'),
+  editSelectStatus: document.getElementById('edit-select-status'),
+  saveTaskChangesBtn: document.getElementById('save-task-changes-btn'),
+  cancelEditBtn: document.getElementById('cancel-edit-btn'),
+  deleteTaskBtn: document.getElementById('delete-task-btn'),
+
 }
 
 let activeBoard = ""
