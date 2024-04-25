@@ -268,6 +268,16 @@ function toggleSidebar(show) {
   elements.showSideBarBtn.style.display = show ? 'none' : 'block';
 }
 
+// Declare a variable isLightMode and assigning it the boolean value true
+
+// Get the current mode from local storage or set to default (light)
+const currentMode = localStorage.getItem('mode') || 'light';
+let isLightMode = currentMode === 'light';
+
+// Set the initial SVG source based on the current mode
+let sideLogoDivSrc = isLightMode ? './assets/logo-dark.svg' : './assets/logo-light.svg';
+elements.sideLogoDiv.src = sideLogoDivSrc;
+
 function toggleTheme() {
  
 }
