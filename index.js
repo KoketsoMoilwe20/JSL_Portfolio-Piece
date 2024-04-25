@@ -60,6 +60,8 @@ const elements = {
   cancelEditBtn: document.getElementById('cancel-edit-btn'),
   deleteTaskBtn: document.getElementById('delete-task-btn'),
 
+  // Filter Div DOM elements
+  filterDiv: document.getElementById('filterDiv'),
 }
 
 let activeBoard = ""
@@ -72,7 +74,7 @@ function fetchAndDisplayBoardsAndTasks() {
   displayBoards(boards);
   if (boards.length > 0) {
     const localStorageBoard = JSON.parse(localStorage.getItem("activeBoard"))
-    activeBoard = localStorageBoard ? localStorageBoard ;  boards[0]; 
+    activeBoard = localStorageBoard ? localStorageBoard :  boards[0]; 
     elements.headerBoardName.textContent = activeBoard
     styleActiveBoard(activeBoard)
     refreshTasksUI();
