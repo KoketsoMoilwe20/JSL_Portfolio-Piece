@@ -246,7 +246,11 @@ function addTask(event) {
   const selectStatus = elements.selectStatus.value;
 
     const task = {
-      
+      'id': task_id,
+      'title': titleInput,
+      'description': descriptionInput,
+      'status': selectStatus,
+      'board': activeBoard,
     };
     const newTask = createNewTask(task);
     if (newTask) {
