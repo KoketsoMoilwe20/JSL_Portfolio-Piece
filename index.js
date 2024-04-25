@@ -33,7 +33,12 @@ const elements = {
   showSideBarBtn: document.getElementById('show-side-bar-btn'),
 
   //Main layout DOM elements
-  
+  header: document.getElementById('header'),
+  headerBoardName: document.getElementById('header-board-name'),
+  dropdownBtn: document.getElementById('dropdownBtn'),
+  addNewTaskBtn: document.getElementById('add-new-task-btn'),
+  editBoardBtn: document.getElementById('edit-board-btn'),
+  deleteBoardBtn: document.getElementById('deleteBoardBtn'),
 }
 
 let activeBoard = ""
